@@ -1,0 +1,536 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.navbar .megamenu{ padding: 1rem; }
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+
+  .navbar .has-megamenu{position:static!important;}
+  .navbar .megamenu{left:0; right:0; width:100%; margin-top:0;  }
+
+}	
+/* ============ desktop view .end// ============ */
+
+/* ============ mobile view ============ */
+@media(max-width: 991px){
+  .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
+    overflow-y: auto;
+      max-height: 90vh;
+      margin-top:10px;
+  }
+}
+.padding20{
+  padding: 30px;
+}
+
+.collapse {
+margin:  0 7.781rem 0 7.781rem;
+
+}
+.companyname , .main-navitems{
+  flex-direction: flex-start;
+}
+.navbar-nav{
+  margin-left: 25px;
+  flex-direction: row;
+}
+.row{
+  margin-bottom: 50px;
+}
+/* css for the search place holder in the navbar */
+.searchdiv{
+  margin-left: auto;
+}
+.hr-healthcondition{
+  width: 100%;
+  border: 1px solid;
+  margin: 10px;
+}
+.arrowbtn{
+margin-bottom: 8px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  size: 5px;
+  background-color: inherit;
+ 
+}
+/* css for on hover the drop down work */
+.navbar-nav > .nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* ICons of connect drop down */
+.iconmar{
+  margin:  10px 30px 20px 0px;
+  font-Size: 30px;
+  color: #7a7573;
+  background-color: inherit;
+}
+/* on hover of ICons of connect drop down such as insta, fb etc */
+.iconmar:hover{
+  color: rgb(219, 31, 136);
+}
+
+
+
+/* CSS for individual dropdown menu items */
+.connect-item:hover .nav-link .dropdown {
+  color:rgb(252, 186, 68);
+}
+
+
+/* CSS for specific dropdown menu items */
+.healthconditions-item:hover .nav-link {
+  color:rgb(252, 186, 68); /* Change color on hover for Healthconditions item */
+}
+
+.discover-item:hover .nav-link {
+  color:rgb(252, 186, 68); /* Change color on hover for Discover item */
+}
+
+.plan-item:hover .nav-link {
+  color: rgb(252, 186, 68);
+}
+.connect-item:hover .nav-link  {
+  color:rgb(252, 186, 68);
+ 
+}
+
+/* CSS for Subscribe button */
+.subscribe:hover {
+  
+  color:#fcba44;
+  
+}
+.paragraphStyle{
+  font-size: 14px;
+  line-height: 18px;
+
+}
+.dropdown-item:hover {
+  color:rgb(219, 31, 136);
+  background-color: rgb(251, 245, 237);
+}
+.margin10px{
+margin: 10px;
+}
+.padding-bottom{
+padding-bottom: 20px;
+}
+.hrbold{
+  border: 1px solid;
+}
+.logotext{
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Proxima Nova Condensed","Proxima Nova Condensed Fallback",sans-serif;
+  
+}
+
+/* Css of plan component */
+/* to align the close button in plan component */
+#padding{
+padding: 0px;
+}
+
+.align-row-reverse{
+  flex-direction: row-reverse;
+  margin: 0px;
+}
+/* css for over all heading  in all component */
+.fontsize20{
+  font-size: 20px;
+  margin-top: 0;
+  line-height: 26px;
+  font-weight: bold;
+  padding: 0px 0px 0px 16px ;
+}
+/* css for the heading of connect component  */
+.fontsizeconnect{
+  font-size: 20px;
+  margin-top: 0;
+  line-height: 26px;
+  font-weight: bold;
+}
+#mainnavid{
+  background-color: #000000;
+  padding: 0px;
+}
+.black-bg{
+  background-color:#000000;
+ 
+}
+
+.backgroundcolor{
+  background-color: rgb(251, 245, 237);
+}
+.planimage{
+  width: 70px;
+  height: 70px;
+  margin-right: 15px;
+  min-width: 70px;
+  min-height: 70px;
+  margin: 20px;
+}
+.fontsize17{
+  font-size: 17px;
+}
+/* css for the main nav btutton such as discover , plans, etc */
+.nvabtn{
+  font-size: 20px;
+  line-height: 28px;
+  color: white;
+  padding: 20px 25px ;
+  font-weight: 500;
+}
+/* css for the list items  in the drop down  of  helth condition */
+.listfont{
+  font-size: 18px;
+  line-height: 26px;
+  box-sizing: inherit;
+  font-weight: 400;
+  margin-top: 7px;
+}
+.btn-close{
+  margin-top: 8px;
+}
+/* font size of the discove component bleow the images */
+.fontsize18{
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 0px;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+/* the image size of the dicover component */
+.discoverimage{
+  max-width: 50px;
+  max-height: 50px;
+}
+
+
+/* algin the searchdiv to the righr side of the nav bar  */
+/* CSS for specific dropdown menu items */
+.healthconditions-item:hover .nav-link,
+.discover-item:hover .nav-link,
+.plans-item:hover .nav-link,
+.connect-item:hover .nav-link {
+  color: rgb(252, 186, 68); /* Change color on hover */
+}
+.nav-item:hover .nav-link,
+.nav-item:hover .nav-link .dropdown {
+  color: rgb(252, 186, 68); /* Change text and icon color on hover */
+}
+/* css for the search bar  */
+/* navbar subscribe button */
+.subscribebtn{
+  background-color: inherit;
+  font-family: Proxima Nova Condensed,Arial Narrow,helvetica,arial,system-ui,sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  box-sizing: inherit;
+  line-height: 26px;
+  padding: 0px 30px;
+  position: relative;
+  
+}
+.subscribebtn:hover{
+color: #fcba44;
+}
+.serachicon {
+    font-size: 15px;
+    position: relative;
+    font-size: 15px;
+}
+  
+.search-input {
+    position: absolute;
+    padding: 6px 15px;
+    right: 10%;
+    top: 18px;
+    width: 355px;
+    border: none;
+    height: 35px;
+    color: black;
+    font-size: 18px;
+}
+.subscribediv {
+    width: auto;
+}
+ /* CSS for the Home page start */
+ .catagorynav{
+  background-color: lightblue;
+  width: 100%;
+  height: 40px;
+  border: none;
+
+ }
+ .btn-outline-dark{
+  border: none;
+ }
+
+ /* Css for the Home page banner */
+.container{
+  padding: 0px;
+}
+.banner{
+width: auto;
+max-height: 400px;
+min-height: 400px;
+margin-top: 20px;
+padding: 0;
+}
+.banner-heading{
+  color: blue;
+  text-align: left
+}
+.bannertext{
+
+  margin:  50px 0px 30px  50px;
+}
+.banner-para{
+  padding: 30px 0px 30px 0px;
+  
+  text-align: left
+}
+/* button in the banner */
+.banner-btn{
+  border: none;
+  background-color: blue;
+  border-radius: 50px;
+color: white;
+text-align: center;
+padding: 5px 15px 0px 15px;
+}
+.allcategories{
+  background-color: #fbf5ed;
+  padding: 10px ;
+  justify-content: center;
+
+}
+.categoriesimage{
+  height: 200px;
+width: 210px;
+margin: 10px;
+  
+
+margin: 0px;}
+
+.aligntext-left{
+  text-align: left;
+}
+/* css for the article box of the home page */
+.allariticles-box{
+  background-color: #fbf5ed;
+  padding: 0;
+}
+
+.post-section{
+ background-color: #fbf5ed;
+}
+.posts{
+ max-width: 500px;
+  height: 300;
+
+}
+.post-section{
+  padding: 10px 50px 30px 50px; 
+  width: 100%;
+  max-height: fit-content;
+
+}
+.post-image{
+  width: 70px;
+  height: 100%;
+
+}
+.important-img{
+width: 270;
+height: 275;
+}
+.importantbox-heading{
+  padding: 0px 10px 30px 0px; 
+  }
+.important-box{
+  padding: 30px;
+  background-color: #fbf5ed;
+}
+.descriptiontext{
+  padding: 10px 0px;
+  text-decoration: none;
+}
+.textdec-none{
+  text-decoration: none;
+}
+.flex-end{
+align-self: flex-end;
+justify-self: end;
+}
+.align-right{
+  align-content: space-between; }
+.notearea{
+    width: auto;
+  height: 400px;
+  background: #d2e6e7;
+   
+    margin-top: 20px;
+    padding: 30px;
+}  
+.custom-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.custom-list li {
+  position: relative;
+  padding-left: 20px; /* Adjust this value to control the distance between the bullet and text */
+  margin-bottom: 10px; /* Adjust this value to control the spacing between list items */
+}
+
+.custom-list li::before {
+  content: "\2022"; /* Bullet character (•) */
+  position: absolute;
+  left: 0;
+}
+/* ////////////////////slider css */
+.slider {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 1000px;
+  height: 600px;
+  border-radius: 10px;
+}
+
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
+.allcategories-box{
+  background-color: #fbf5ed;
+  padding: 30px;
+}
+.footer-box{
+  background: #000;
+  padding: 50px;
+}
+.footerlogo ,.footercertificate{
+  width: 200px;
+  height: auto;
+  margin-top: 20px;
+}
+.footer-box{
+  margin: 0px 70px 0px 70px;
+}
+.footercertificate{
+  margin-top: 20px;
+}
+.footerlinks{
+  width: 100%;
+  height: auto;
+}
+.upperlinks a{
+  color: white;
+  padding: 10px;
+}
+.footer-font-16{
+  font-size: 14px;
+    line-height: 20px;
+    box-sizing: inherit;
+    font-weight: 400;
+    
+}
+.upperlinks{
+  text-align: end;
+color: white; 
+margin-bottom: 30px;
+}
+.ourbrand{
+  font-size: 16px;
+font-weight: 600;
+color: white;
+}
+.lowerlinks a{
+  padding: 10px;
+  margin-top: 30px;
+  color: white;
+}
+.lowerlinks{
+  text-align: end;
+}
+.footer-section{
+  background-color: black;
+  
+}
+.upperlinks a:hover{
+  color: pink;
+} 
